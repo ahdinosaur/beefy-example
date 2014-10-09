@@ -1,3 +1,5 @@
 require('./index.css');
 
-document.querySelector('main > h2').textContent = "this is an example";
+var $ = require('jquery');
+
+$('main > h2').text("this is an example");
