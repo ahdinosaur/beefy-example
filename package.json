@@ -4,7 +4,7 @@
   "description": "this is an example",
   "main": "index.js",
   "scripts": {
-    "start": "beefy index.js:bundle.js 5000",
+    "start": "beefy index.js:bundle.js 5000 --live",
     "build": "browserify index.js -o bundle.js -g uglifyify",
     "test": "testling",
     "deploy": "npm run build && bin/deploy"
