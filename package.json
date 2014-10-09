@@ -1,0 +1,37 @@
+{
+  "name": "example",
+  "version": "0.1.0",
+  "description": "this is an example",
+  "main": "index.js",
+  "scripts": {
+    "start": "beefy index.js:bundle.js 5000",
+    "build": "browserify index.js -o bundle.js -g uglifyify",
+    "test": "testling",
+    "deploy": "npm run build && bin/deploy"
+  },
+  "browserify": {
+    "transform": [
+      "cssify"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ahdinosaur/example.git"
+  },
+  "keywords": [],
+  "author": "ahdinosaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahdinosaur/example/issues"
+  },
+  "homepage": "https://github.com/ahdinosaur/example",
+  "dependencies": {
+    "browserify": "^6.0.3",
+    "cssify": "^0.6.0",
+    "uglifyify": "^2.5.0"
+  },
+  "devDependencies": {
+    "beefy": "^2.1.1",
+    "watchify": "^2.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var path = require('path');
+var ghpages = require('ghpages');
+
+ghpages.publish(
+  path.join(__dirname, "/../"),
+  function (err) {
+    if (err) throw err;
+    console.log("published!");
+  }
+);
