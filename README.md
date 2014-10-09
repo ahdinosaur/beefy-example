@@ -8,6 +8,7 @@ this is an example
 
 ```
 git clone https://github.com/ahdinosaur/beefy-example
+cd beefy-example
 npm install
 ```
 

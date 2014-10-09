@@ -1,3 +1,3 @@
 require('./index.css');
 
-document.querySelector('main').textContent = "this is an example";
+document.querySelector('main > h2').textContent = "this is an example";
