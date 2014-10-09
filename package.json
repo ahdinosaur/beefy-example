@@ -10,9 +10,7 @@
     "deploy": "npm run build && bin/deploy"
   },
   "browserify": {
-    "transform": [
-      "cssify"
-    ]
+    "transform": []
   },
   "repository": {
     "type": "git",
@@ -27,7 +25,7 @@
   "homepage": "https://github.com/ahdinosaur/example",
   "dependencies": {
     "browserify": "^6.0.3",
-    "cssify": "^0.6.0",
+    "jquery": "^2.1.1",
     "uglifyify": "^2.5.0"
   },
   "devDependencies": {
